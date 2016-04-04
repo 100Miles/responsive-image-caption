@@ -27,8 +27,8 @@ img {
   display: block;
 }
 
-.image {
-  height: 100%;
+figure {
+  margin: 0;
 }
 
 .body {
@@ -36,7 +36,7 @@ img {
 }
 
 h2 {
-  font-family: "Denk One";
+  font-family: "Denk One", sans-serif;
   margin: 0;
   padding: 1.3rem;
 }
@@ -44,4 +44,46 @@ h2 {
 p {
   margin: 0;
   padding: 0 1.3rem 1.3rem 1.3rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html{
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .body {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    border-radius: 4px;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html{
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html{
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
 }
